@@ -507,3 +507,35 @@ textarea.form-control {
 .logged-out {
     display: none;
 }
+/* ===== 背景色切り替え（ダークモード） ===== */
+body.bg-dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+body.bg-dark h1,
+body.bg-dark h2,
+body.bg-dark label,
+body.bg-dark .post-author,
+body.bg-dark #userEmail {
+    color: #ffffff;
+}
+
+body.bg-dark .container,
+body.bg-dark .post,
+body.bg-dark .post-form,
+body.bg-dark .auth-container,
+body.bg-dark .user-info,
+body.bg-dark .modal-content {
+    background-color: #3a3a3a;
+}
+
+body.bg-dark .form-control {
+    background-color: #555;
+    color: #ffffff;
+    border-color: #777;
+}
+
+body.bg-dark .form-control::placeholder {
+    color: #cccccc;
+}

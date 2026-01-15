@@ -479,6 +479,11 @@ function updateUI(user) {
 
 $(function() {
     // Firebaseの初期化
+        // ★ 背景色切り替え
+    $('#bgToggleButton').on('click', () => {
+        $('body').toggleClass('bg-dark');
+    });
+
     try {
         firebase.initializeApp(firebaseConfig);
         console.log("Firebase initialized successfully");
@@ -538,7 +543,15 @@ window.addEventListener('unload', () => {
 </head>
 <body>
     <div class="container">
+        <!-- 背景色変更ボタン -->
+<div class="button-group">
+    <button id="bgToggleButton" class="btn-secondary">
+        背景色を切り替える
+    </button>
+</div>
+
         <h1>掲示板アプリ</h1>
+
 
         <!-- メッセージ表示エリア -->
         <div id="messageArea"></div>
